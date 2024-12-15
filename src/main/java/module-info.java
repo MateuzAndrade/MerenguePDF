@@ -10,7 +10,12 @@ module org.pegamtita.merenguepdf {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires org.apache.pdfbox;
+
 
     opens org.pegamtita.merenguepdf to javafx.fxml;
+    opens org.pegamtita.merenguepdf.telas to javafx.fxml;
+    opens org.pegamtita.merenguepdf.controller to javafx.fxml;
+
     exports org.pegamtita.merenguepdf;
 }
