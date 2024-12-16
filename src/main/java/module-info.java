@@ -11,6 +11,7 @@ module org.pegamtita.merenguepdf {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires org.apache.pdfbox;
+    requires com.gluonhq.attach.util;
 
 
     opens org.pegamtita.merenguepdf to javafx.fxml;

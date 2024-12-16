@@ -4,25 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45544a03-3630-4067-abac-429853e09597" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/app.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/controller/SepararController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/pegamtita/merenguepdf/img/converterpdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/pegamtita/merenguepdf/img/juntarpdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/pegamtita/merenguepdf/img/merengueicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/pegamtita/merenguepdf/img/separarpdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/pegamtita/merenguepdf/telas/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="45544a03-3630-4067-abac-429853e09597" name="Changes" comment="Primeiras telas, e funcionalidades">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/service/PdfService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/util/Mensage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/pegamtita/merenguepdf/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/controller/SepararController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/controller/SepararController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +89,15 @@
       <option name="presentableId" value="Default" />
       <updated>1733656367354</updated>
     </task>
+    <task id="LOCAL-00001" summary="Primeiras telas, e funcionalidades">
+      <option name="closed" value="true" />
+      <created>1734257511997</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734257511997</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +110,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Primeiras telas, e funcionalidades" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primeiras telas, e funcionalidades" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
