@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45544a03-3630-4067-abac-429853e09597" name="Changes" comment="Primeiras telas, e funcionalidades">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/service/PdfService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/util/Mensage.java" afterDir="false" />
+    <list default="true" id="45544a03-3630-4067-abac-429853e09597" name="Changes" comment="Separacao dos metos em um service apra melhor organizacao">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/controller/ConverterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/controller/JuntarController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/app.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/controller/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/controller/SepararController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/controller/SepararController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/service/PdfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pegamtita/merenguepdf/service/PdfService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734257511997</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Separacao dos metos em um service apra melhor organizacao">
+      <option name="closed" value="true" />
+      <created>1734342218769</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734342218769</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,7 +123,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primeiras telas, e funcionalidades" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primeiras telas, e funcionalidades" />
+    <MESSAGE value="Separacao dos metos em um service apra melhor organizacao" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separacao dos metos em um service apra melhor organizacao" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

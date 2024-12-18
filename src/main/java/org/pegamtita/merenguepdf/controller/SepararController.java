@@ -63,7 +63,7 @@ public class SepararController implements Initializable {
     }
 
     private void selecionarArquivo() {
-        arquivoSelecionado = pdfService.selecionarArquivo(getStage(bt_selecionar));
+        arquivoSelecionado = pdfService.selecionarArquivo(getStage(bt_selecionar), "*.pdf");
         if (arquivoSelecionado != null) {
             lbArquivoSelecionado.setText(arquivoSelecionado.getName());
             int totalPaginas = pdfService.ObterTotalPagina(arquivoSelecionado);
@@ -78,7 +78,7 @@ public class SepararController implements Initializable {
     }
 
     private void localSalvar(){
-       arquivoSaida = pdfService.selecionarLocalSalvar(getStage(bt_salvar));
+       arquivoSaida = pdfService.selecionarLocalSalvar(getStage(bt_salvar),"Separado");
         if (arquivoSaida != null){
             lbLocalSalvarArquivo.setText(arquivoSaida.getAbsolutePath());
         }else {

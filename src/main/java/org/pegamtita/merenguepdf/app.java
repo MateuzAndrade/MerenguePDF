@@ -17,6 +17,7 @@ public class app extends Application {
             Parent tela = FXMLLoader.load(getClass().getResource("telas/home.fxml"));
             Scene scene = new Scene(tela);
             janela.setScene(scene);
+            stage.setResizable(false);
             janela.show();
 
     }
