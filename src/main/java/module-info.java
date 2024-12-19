@@ -12,6 +12,7 @@ module org.pegamtita.merenguepdf {
     requires com.almasb.fxgl.all;
     requires org.apache.pdfbox;
     requires com.gluonhq.attach.util;
+    requires org.docx4j.core;
 
 
     opens org.pegamtita.merenguepdf to javafx.fxml;

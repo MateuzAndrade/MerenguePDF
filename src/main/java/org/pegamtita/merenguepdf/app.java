@@ -17,6 +17,7 @@ public class app extends Application {
             Parent tela = FXMLLoader.load(getClass().getResource("telas/home.fxml"));
             Scene scene = new Scene(tela);
             janela.setScene(scene);
+            stage.getIcons().add(new Image(getClass().getResourceAsStream("/org/pegamtita/merenguepdf/img/icone.png")));
             stage.setResizable(false);
             janela.show();
 

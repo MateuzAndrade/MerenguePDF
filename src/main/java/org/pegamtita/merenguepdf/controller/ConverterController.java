@@ -2,6 +2,7 @@ package org.pegamtita.merenguepdf.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
@@ -50,6 +51,40 @@ public class ConverterController implements Initializable {
     }
 
     private void converter() {
+        if (arquivoSelecionado == null || arquivoSaida == null) {
+            mensage.exibir( "Erro", "Por favor, selecione um arquivo e um local para salvar.", Alert.AlertType.WARNING);
+            return;
+        }
+
+        String extensao = obterExtensaoArquivo(arquivoSelecionado);
+
+        boolean sucesso = false;
+
+        switch (extensao.toLowerCase()) {
+            case "png":
+            case "jpg":
+            case "jpeg":
+                sucesso = pdfService.converterImagemParaPdf(arquivoSelecionado, arquivoSaida);
+                break;
+
+            case "txt":
+                sucesso = pdfService.converterTextoParaPdf(arquivoSelecionado, arquivoSaida);
+                break;
+
+            case "docx":
+                sucesso = pdfService.converterWordParaPdf(arquivoSelecionado, arquivoSaida);
+                break;
+
+            default:
+                mensage.exibir("Erro", "Formato de arquivo não suportado.", Alert.AlertType.ERROR);
+                return;
+        }
+
+        if (sucesso) {
+            mensage.exibir( "Sucesso", "Arquivo convertido com sucesso!", Alert.AlertType.INFORMATION);
+        } else {
+            mensage.exibir("Erro", "Erro ao converter o arquivo.", Alert.AlertType.ERROR);
+        }
 
     }
 
@@ -63,7 +98,7 @@ public class ConverterController implements Initializable {
     }
 
     private void selecionarArquivo() {
-        arquivoSelecionado = pdfService.selecionarArquivo(getStage(bt_selecionar),"*.all");
+        arquivoSelecionado = pdfService.selecionarArquivo(getStage(bt_selecionar),"*.*");
         if (arquivoSelecionado != null){
             lbSelecionarArquivo.setText(arquivoSelecionado.getName());
         }else {
@@ -71,5 +106,11 @@ public class ConverterController implements Initializable {
         }
     }
 
+
+    private String obterExtensaoArquivo(File arquivo) {
+        String nome = arquivo.getName();
+        int index = nome.lastIndexOf('.');
+        return (index > 0) ? nome.substring(index + 1) : "";
+    }
 
 }
