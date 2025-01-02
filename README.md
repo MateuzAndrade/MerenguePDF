@@ -1,5 +1,7 @@
 # MerenguePDF
 
+![Demonstração do MerenguePDF](ApresentacaoSoftMerenguePDF.gif)
+
 Sabemos a facilidade que é hoje para manipular arquivos PDF, com diversos sites e ferramentas disponíveis. Mas aí surge a dúvida: será que realizar o upload de seus arquivos, com informações confidenciais, nesses sites é realmente confiável? Foi pensando nisso que nasceu o **MerenguePDF**.
 
 O MerenguePDF é uma ferramenta **open-source**, desenvolvida em **JavaFX**, para manipulação de PDFs diretamente no seu computador, sem a necessidade de enviar arquivos para a nuvem. Com ele, você mantém a segurança e privacidade dos seus documentos enquanto realiza tarefas de maneira eficiente.
